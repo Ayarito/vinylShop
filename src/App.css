@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Philosopher:wght@700&family=Rubik:wght@300;400&display=swap');
+
+
+body{
+   background-color: black; 
+}
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+a {
+   color: #E29578;
+   text-decoration: none;
+}
+
+.container {
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 30px;
+   margin: 0 -15px;
+}
+
+
+.col-3 {
+   width: 33.33333333%;
+   padding: 0 15px;
+}
+
+
+.col-6 {
+   width: 50%;
+   padding: 0 15px;
+}
+
+h2{
+font-family: 'Goblin One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+color: rgba(255, 207, 86, 0.9);
+}
+
+.all__Headers{
+   text-align: center;
+}

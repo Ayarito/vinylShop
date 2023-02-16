@@ -1,0 +1,38 @@
+header{
+   position: fixed;
+   width: 100%;
+   padding:20px 0;
+}
+
+
+.header__nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+li{
+   display: flex;
+   column-gap: 60px;
+   color: #E29578;
+}
+
+
+a.selected{
+   color:rgba(86, 255, 164, 0.6);
+}
+
+/* .navbar {
+   color: #E29578;
+   background-color: black!important;
+}
+a.nav-link {
+   color: #E29578;
+}
+a.nav-link.active { 
+   color:rgba(86, 255, 164, 0.6)!important;
+}
+
+.navbar .navbar-expand-lg .navbar-light .bg-light{
+background-color: black;
+} */
