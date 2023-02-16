@@ -2,9 +2,6 @@ import React from "react";
 import "./Slider.css";
 import slide from "../../images/dance 1.svg";
 
-import {Swiper, SwiperSlider} from 'swiper/react'
-import {Navigation, Pagination, Autoplay} from 'swiper'
-
 
 function Slider() {
   return (
