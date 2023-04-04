@@ -16,11 +16,11 @@ const StyledBadge =
     },
   }));
 
-export default function CustomizedBadges({handleToggle}) {
+export default function CustomizedBadges({handleToggle, badge}) {
   return (
     <div className="header__cart" onClick={handleToggle}>
       <IconButton aria-label="cart">
-        <StyledBadge badgeContent={1} color="secondary">
+        <StyledBadge badgeContent={badge} color="secondary">
           <ShoppingCartIcon />
         </StyledBadge>
       </IconButton>

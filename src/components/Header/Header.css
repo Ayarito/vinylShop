@@ -1,7 +1,7 @@
 header{
    position: fixed;
    width: 100%;
-   padding:20px 0;
+   padding: 50px 0;
 }
 
 
@@ -21,18 +21,3 @@ li{
 a.selected{
    color:rgba(86, 255, 164, 0.6);
 }
-
-/* .navbar {
-   color: #E29578;
-   background-color: black!important;
-}
-a.nav-link {
-   color: #E29578;
-}
-a.nav-link.active { 
-   color:rgba(86, 255, 164, 0.6)!important;
-}
-
-.navbar .navbar-expand-lg .navbar-light .bg-light{
-background-color: black;
-} */

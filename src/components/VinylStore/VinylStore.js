@@ -4,13 +4,9 @@ import Record from "./CartRecord/Record";
 import "./VinylStore.css";
 
 function VinylStore() {
-
-
   const { items: stock } = useSelector((state) => state.vinylStore);
 
-  console.log(stock);
-
-  const item = stock.map((el) => (
+  const items = stock.map((el) => (
     <Record key={el.id} el={el} />
   ));
 
@@ -19,7 +15,7 @@ function VinylStore() {
       <div className="container">
         <h2 className="all__Headers">Recordstore exclusives</h2>
         <div className="row">
-          {item}
+          {items}
         </div>
       </div>
     </section>

@@ -2,8 +2,6 @@
    padding: 50px 0 0;
 }
 
-
-
 .box__Item{
    display: flex;
    flex-direction: column;
@@ -28,6 +26,7 @@ font-size: 14px;
 }
 
 .MuiSvgIcon-root{
+   cursor: pointer;
    color: rgba(86, 255, 164, 0.6);;
 }
 

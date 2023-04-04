@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import Cart from "../Cart/Cart";
 import { useState } from "react";
 import Badge from "../Badge/Badge";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -13,6 +14,7 @@ const Header = () => {
     setToggle(!toggle);
   };
 
+  const cartLength = useSelector((state) => state.vinylStore.cart.length);
   const navActive = ({ isActive }) => (isActive ? "selected" : "");
 
   return (
@@ -35,7 +37,7 @@ const Header = () => {
                 <NavLink className={navActive} to={"/blog"}>
                   Blog
                 </NavLink>
-                <Badge handleToggle={handleToggle} />
+                <Badge handleToggle={handleToggle} badge={cartLength}/>
                 <Cart toggle={toggle} handleToggle={handleToggle} />
               </li>
             </ul>
@@ -47,29 +49,3 @@ const Header = () => {
 };
 export default Header;
 
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-
-// const Header = () => {
-//   return (
-//     <Navbar bg="light" expand="lg">
-//       <Container>
-//         <Navbar.Brand href="#home"><img src={logo} alt="logo"/></Navbar.Brand>
-//         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//         <Navbar.Collapse id="basic-navbar-nav">
-//           <Nav className="me-auto">
-//             <Nav.Link href="#home">Home</Nav.Link>
-//             <Nav.Link href="#albums">Link</Nav.Link>
-//             <Nav.Link href="#record">Contact</Nav.Link>
-//             <Nav.Link href="#finds">Blog</Nav.Link>
-//             <Nav.Link href="#footer">Blog</Nav.Link>
-//             <div className='cart'> <ShoppingCartIcon/> </div>
-//           </Nav>
-//         </Navbar.Collapse>
-//       </Container>
-//     </Navbar>
-//   );
-// }
-
-// export default Header;
