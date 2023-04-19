@@ -10,16 +10,16 @@ function Cart({ toggle, handleToggle }) {
 
   return (
     <div className={toggle ? "cart__modal show" : "cart__modal"}>
-      <p className="exit" onClick={handleToggle}>
-        <CloseIcon />
-      </p>
       <div className="cart__content">
-        <h4>Total:</h4>
+        <h4>total:</h4>
         <div className="box__Cart">
         {cart.map((record) => (
           <CartRecord key={record.id} el={record} />
         ))}
         </div>
+        <p className="exit" onClick={handleToggle}>
+        <CloseIcon />
+      </p>
       </div>
     </div>
   )

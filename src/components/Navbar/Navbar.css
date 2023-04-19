@@ -1,3 +1,9 @@
 .bg-dark {
    background-color: black!important;
 }
+
+.navbar-expand .navbar-nav {
+   flex-direction: row;
+   display: flex;
+   align-items: center;
+}
